@@ -12,6 +12,7 @@ def redim(img, largura):
     img = cv2.resize(img, (largura, alt), interpolation = cv2.cv2.INTER_AREA)
     return img 
 
+#Função que retorna a cor com maior quantidade de número de pixels 
 def máximo(pred, pblue, pgreen):
     if pred > pblue and pred > pgreen:
         return "red"
